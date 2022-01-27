@@ -7,6 +7,9 @@ body * {
 }
 
 body {
+    display: grid;
+    gap: 20px;
+    padding: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
         sans-serif;
 }
