@@ -48,3 +48,23 @@ const techList = ['Dviratis', 'Motociklas', 'Masina', 'Roges', 'Raketa'];
 for (let i = 0; i < techList.length; i++) {
     techListDOM.innerHTML += `<li>${i}) ${techList[i]}</li>`;
 }
+
+const styleDOM = document.querySelector('style');
+const ranRed = Math.floor(Math.random() * 256);
+const ranGreen = Math.floor(Math.random() * 256);
+const ranBlue = Math.floor(Math.random() * 256);
+styleDOM.innerHTML = `.random-color {
+        color: rgb(${ranRed}, ${ranGreen}, ${ranBlue});
+    }`;
+
+
+const bookListDOM = document.querySelector('ul:nth-of-type(3)');
+const booksList = ['Du gaideliai', 'Raudonkepuraite', 'Juru vilkas', 'Haris Poteris'];
+let booksHTML = '';
+
+for (let i = 0; i < booksList.length; i++) {
+    const book = booksList[i];
+    booksHTML += `<li>${i + 1}) ${book}</li>`;
+}
+
+bookListDOM.innerHTML = booksHTML;
