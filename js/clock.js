@@ -2,9 +2,9 @@ function labas() {
     console.log('labas rytas');
 }
 
-setTimeout(labas, 1000);
-setTimeout(labas, 2000);
-setTimeout(labas, 3000);
+setTimeout(labas, 100);
+setTimeout(labas, 200);
+setTimeout(labas, 300);
 
 // #################################################
 
